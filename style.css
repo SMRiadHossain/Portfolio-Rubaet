@@ -1,10 +1,12 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
 
 body {
@@ -314,46 +316,78 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* Stories SECTION */
+.section{
+  width: 75%;
+  height: fit-content;
+  margin: 75px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 25px;
 
-#experience {
-  position: relative;
+}
+.card{
+  background-color: #e4d8d8;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0,4);
+}
+.image-section{
+  min-height: 250px;
 }
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+.card .img-one{
+  background-image: url(assets/story-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .img-two{
+  background-image: url(assets/story-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .img-three{
+  background-image: url(assets/story-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.content{
+  text-align: center;
+  padding: 20px 10px;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.content h2{
+  letter-spacing: 2px;
+  color: #366232;
 }
 
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+.content p{
+  font-size: 16px;
+  color: #0b0707;
+  margin: 15px 0px;
 }
 
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+.content a{
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #222;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-color: #d6c954;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
 }
 
-article .icon {
-  cursor: default;
+.content a:hover{
+  background-color: #87803d;
+  transition: 1s ease;
 }
 
-/* PROJECTS SECTION */
+/* Contents SECTION */
 
 #projects {
   position: relative;
@@ -386,7 +420,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  /* height: 70vh; */
 }
 
 .contact-info-upper-container {
